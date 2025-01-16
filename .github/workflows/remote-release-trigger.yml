@@ -61,7 +61,7 @@ jobs:
           tag: ${{ steps.calculate_version.outputs.result }}
 
       - name: Release
-        uses: softprops/action-gh-release@de2c0eb89ae2a093876385947365aca7b0e5f844 # pin@v1
+        uses: softprops/action-gh-release@67b6c38432c171b8aa64dc6f3f152d12da2d99fa # pin@v1
         with:
           target_commitish: 'main'
           token: ${{ steps.generate_token.outputs.token }}
